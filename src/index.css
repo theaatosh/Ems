@@ -17,3 +17,13 @@ html,body{
 body{
   background-color: #111;
 }
+
+/* For Chrome, Safari, and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
