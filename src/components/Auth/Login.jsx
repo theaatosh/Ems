@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 
-export const Login = () => {
+export const Login = ({handleLogin}) => {
+  
   const[email,setEmail]=useState('');
   const[password,setpassWord]=useState('');
   const handleSubmit=(e)=>{
-    e.preventDefault();
-    console.log(`Email is:${email} and password is ${password}`);
-    
+    handleLogin(email,password)
+    e.preventDefault();    
     setEmail('');
     setpassWord('')
 }
